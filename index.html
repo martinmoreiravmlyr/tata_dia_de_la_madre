@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la madre - TaTa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.tata.com.uy/">
+            <img class="logotata" src="images/tata.png">
+        </a>
+    </header>
+
+    <div id="loader" style="display: none;"><img src="images/cart.png"></div>
+
+    <div class="parallax"></div>
+
+    <div class="container">
+
+        <h1>¿No sabés qué regalarle a mamá?</h1>
+        <h2>Respondé unas preguntas y recibí una lista de opciones que seguro le van a encantar.</h2>
+
+        <form id="surveyForm">
+            <div class="containerq">
+                <label for="category" class="form-label">¿Cuál es el plan ideal de tu mamá para un domingo por la mañana?</label>
+                <select class="form-select select-custom" id="category">
+                    <option value="mimos">Desayunar en familia.</option>
+                    <option value="abrazo">Quedarse en la cama, leyendo y descansando.</option>
+                    <option value="salud">Salir a caminar o entrenar.</option>
+                    <option value="hogar">Disfrutar de estar en casa.</option>
+                    <option value="innovacion">Estar tranquila con su celular o computadora.</option>
+                </select>
+            </div>
+            <div class="containerq">
+                <label for="priceRange" class="form-label">¿Qué es lo que más valora tu mamá en su rutina diaria?</label>
+                <select class="form-select select-custom" id="priceRange">
+                    <option value="belleza">Tener tiempo para ella.</option>
+                    <option value="abrazo">Momentos de calma y confort en casa.</option>
+                    <option value="salud">Actividades que la mantienen activa y enérgica.</option>
+                    <option value="innovacion">El tiempo que la tecnología le ahorra.</option>
+                    <option value="mimos">Pequeños placeres como un buen café o té</option>
+                </select>
+            </div>
+            <div class="containerq">
+                <label for="time" class="form-label">Si tu mamá tuviera un día completamente libre sin responsabilidades, ¿cómo preferiría pasar el tiempo?</label>
+                <select class="form-select select-custom" id="time">
+                    <option value="abrazo">Relajándose con un libro o música en un espacio acogedor.</option>
+                    <option value="belleza">Día de spa.</option>
+                    <option value="hogar">Renovando algún espacio de la casa.</option>
+                    <option value="innovacion">Descargando y probando nuevos juegos y apps.</option>
+                    <option value="salud">Saliendo a caminar sin horario.</option>
+                </select>
+            </div>
+            <div class="containerq">
+                <label for="style" class="form-label">¿Cómo describirías el estilo de vida de tu mamá?</label>
+                <select class="form-select select-custom" id="style">
+                    <option value="salud">Saludable y activa.</option>
+                    <option value="abrazo">Hogareña.</option>
+                    <option value="belleza">Enfocado en el cuidado interior y exterior.</option>
+                    <option value="innovacion">Moderno e innovador.</option>
+                    <option value="mimos">Disfruta de los pequeños lujos y placeres cotidianos.</option>
+                </select>
+            </div>
+            <div class="containerq">
+                <label for="best" class="form-label">¿Qué tipo de regalo crees que haría sonreír más a tu mamá?</label>
+                <select class="form-select select-custom" id="best">
+                    <option value="hogar">Algo para alegrar su espacio personal.</option>
+                    <option value="mimos">Un chocolate o un buen café.</option>
+                    <option value="abrazo">Ropa o accesorios.</option>
+                    <option value="innovacion">Lo último en tecnología.</option>
+                    <option value="salud">Cualquier cosa relacionada con el fitness.</option>
+                </select>
+            </div>
+            <button type="submit" class="btn buscar">
+                <p>
+                    <img src="images/hart.png" alt="Icono Buscar" class="icono-btn">Buscar regalo para MAMÁ
+                </p>
+            </button>
+        </form>
+
+        <div id="productList" class="row mt-4"></div>
+
+
+    </div>
+
+    <div class="fondohart"><img src="images/fondohart.png"></div>
+
+    <footer>
+        <p>© Tata 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
